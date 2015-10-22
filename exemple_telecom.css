@@ -12,17 +12,43 @@ a{
 text-decoration: none
 }
 
+body {
+	position: relative;
+	margin-left: 0px;
+	margin-right: 0px;
+}
 
+.container-fluid{
 
-h2 span
-{
-	
+	padding: 0;
+}
+#dim-row{
+	width: 1349px;
+
+}
+
+#imglogo{
+	width:100%;
+	max-width: 620px;
+}
+
+#navbootstrap li a{
+	font-size: 18px;
+}
+
+#navbootstrap {
+	padding-left: 205px;
 }
 
 #sectionprincipale
 {
 	max-width: 1050px;
 	margin-left: 30px;
+}
+
+
+#accordion{
+	margin: 50px 0px;
 }
 
 #boxaside
@@ -38,11 +64,7 @@ position:fixed;
 right: 0;
 top: 28%;
 }
-body {
-	position: relative;
-	margin-left: 0px;
-	margin-right: 0px;
-}
+
 
 #boxaside ul
 {
@@ -68,6 +90,7 @@ body {
 
 #boxaside a{
 	color:white;
+	font-size: 14px;
 }
 
 
@@ -79,30 +102,8 @@ body {
 	padding-left: 130px;
 }
 
-#nav {
 
-	padding: 0; margin: 0;
-	text-align: center; 
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.85);
 
-}
-#nav li {
-	display: inline;
-}
-#nav li:hover{
-    margin-left: 35px;
-    margin-right: -5px;
-}
-#nav a {
-	margin: 0 16px;
-	color: white;
-	font-size: 18px;
-
-}
-#nav a:hover{
-opacity: 0.7;
-}
 
 #imagespartenaires{
 
@@ -119,14 +120,21 @@ opacity: 0.7;
 }
 
 #formulaire {
-text-align: center;
+
+display: block;
+margin: 30px auto ;
 border: 2px solid black;
 border-radius: 5px;
 width:250px;
-margin-left: 475px;
-margin-bottom: 20px;
+
 }
-#formulaire:hover{
+
+#formulaire img{
+	display: block;
+	margin: auto;
+}
+
+#formulaire img:hover{
 	opacity: 0.7;
 }
 #formulaire p{
@@ -134,15 +142,24 @@ margin-bottom: 20px;
 }
 #mail {
 
+	display: block;
+	margin: 30px auto;
 	border:2px solid black;
 	border-radius: 5px;
 	width: 400px;
 	height: 80px;
-	margin-top: 20px;
-	margin-left: 475px;
-	margin-bottom: 20px;
+	
 }
-#mail:hover
+
+
+#mail img{
+height:51.2px; 
+width:51.2px; 
+margin: 10px 15px;
+
+}
+
+#mail img:hover
 {
 	opacity: 0.7;
 }
@@ -150,6 +167,20 @@ margin-bottom: 20px;
 .video{
 	margin-top: 30px;
 }
+
+#buttonvideo{
+	margin: 30px auto;
+	display: block;
+
+}
+
+#buttonvideo:hover{
+	opacity: 0.7;
+	background-color: #403838;
+	border-color: #403838;
+}
+
+
 
 footer{
 	height: 100px;
@@ -175,7 +206,9 @@ footer img{
 	float:right;
 	padding-top: 13px;}
 
-<style>
+/* STYLE DU CAROUSEL (non appliqué)
+
+
 .carousel-page
 {
 width:100%;
@@ -183,7 +216,19 @@ height:400px;
 background-color:#5f666d;
 color:white;
 }
-</style>
+
+*/
+
+#leftcarousel{
+	margin-left: 25%;
+	width: 7%;
+}
+
+#rightcarousel{
+	margin-right: 25%;
+	width: 7%;
+}
+
 
 
 
@@ -219,7 +264,7 @@ Effet sur les titres
   margin-left: 15px;
 }
 
-/* Override Bootstrap */
+/* ................................Override Bootstrap ...........................*/
 h1, .h1 {
     font-size: 24px;}
 h2, .h2 {
@@ -230,4 +275,67 @@ h2, .h2 {
     padding-left: 0px; 
     margin-right: 0;
     margin-left: 0;
+}
+
+a:active, a:hover {
+    outline: 0;
+    outline-width: 0px;
+}
+
+/* ..............Override navbar.........*/
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+
+.navbar-default {
+    background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.85);
+    border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+/* ..............Override boutton vidéo.........*/
+
+.btn-primary {
+    color: #fff;
+    background-color: #403838;
+    background-color: rgba(64, 56, 56, 0.9);
+    border-color: #403838;
+}
+
+ h4 {
+   
+    color: white;
+}
+ .modal-content{
+background-color: black;
+ }
+
+ .close {
+    color: white;}
+
+ #clipyoutube{
+ 	display: block;
+ 	margin: auto;
+ }
+
+/* ..............Override Collapse.........*/
+
+ .panel-default>.panel-heading {
+    color: white;
+     background-color: #403838;
+    background-color: rgba(64, 56, 56, 0.9);
+    border-color: #ddd;
 }
