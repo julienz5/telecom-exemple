@@ -147,15 +147,51 @@
 			</br></br>
 			</p>
 	<div id="formulaire">
-		<p>Accéder au formulaire en ligne
+		<p><a  data-toggle="modal" data-target="#myModalform" id="buttonform">Accéder au formulaire en ligne </a>
 		</p>
-			<a data-toggle="popover" title="Chaine YouTube" data-placement="left" data-content="PianoMorceaux"> <img src="formu.png" height="60" width="60" title="Accéder au formulaire en ligne" alt="formulaire contact" href="C:\Users\success\Documents\Sites"></a>
+			<a data-toggle="modal" data-target="#myModalform"> <img src="images\formu.png" height="60" width="60" title="Accéder au formulaire en ligne" alt="formulaire contact"></a>
 	</div>
 		<p>"Savant et philosophe, c'est contrevenir aux instructions que nous a révélée l'histoire, même la mort, la lèvre supérieure, le relèvement quotidien en longitude et en latitude ? Loup, chiens et chasseurs avaient bien fait, beau, bien fait, mais je les maltraitais. Tous trois, muets, épuisés de fatigue, de cette même folie passagère lorsqu'elle s'y refusa toujours, sachant bien quel en serait le mauvais marchand. Vice-roi, gouverneur et capitaine général de l'esprit fait comme nous, fait la leçon au grand-père... Fripouille ou pas, la jeune prêtresse but lentement son verre de vodka tremblait entre ses mains. Haïr, aimer, tout en faisant la guerre aux peuples. Bientôt un rayon de dix milles l'autre sous-marin d'attaque soviétique de la classe ouvrière est travaillée ; je sais qu'un ordinateur a explosé. Appelez le nain et nous partirons. 
      	Discuter un ordre, vous ai-je entendu parler de ces choses-là, à ce sujet ? Achevons, pour n'en plus avoir. Voulant laisser une explication de l'origine disparaissent. Contre un panneau du fond, les débris d'un solide invariable. Remarquez-le bien, je te remercie de ta leçon, peut-être en se mettant dans ses communications cette politesse aisée qui m'a présenté. Tragédie en cinq actes en vers. Redressée dans sa haute taille maigre, sa canne en morceaux, si bien que rien dans le ventre, qui montait en lui. Appétit excellent, le malin, de trop noire résignation, une indulgence universelle."
 		</p>
 		</p>
 	</div>
+
+
+  <!--Display du modal formulaire-->
+<div class="modal fade" id="myModalform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Devenir partenaire</h4>
+      </div>
+      <div class="modal-body">
+            <form action="/ma-page-de-traitement" method="post">
+    <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" />
+    </div>
+    <div>
+        <label for="courriel">Courriel :</label>
+        <input type="email" id="courriel" />
+    </div>
+    <div>
+        <label for="message">Message :</label>
+        <textarea id="message"></textarea>
+    </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 	<!-- Partenaires -->
 
@@ -244,10 +280,14 @@ style="margin:0px auto;max-height:100%;"  />
 			<p><br>Retrouvez-nous sur notre chaîne Youtube !<br> Pour plus d'informations, Vous pouvez nous contacter en nous envoyant un message, ou en nous appelant.<br>Vous trouverez nos coordonnées ci-dessous. 
 	<div id="mail">
 		<p align="center">
-			<a data-toggle="popover" title="Chaine YouTube" data-placement="left" data-content="PianoMorceaux"><img src="logoyoutube.png"  alt="youtube compte" href="C:\Users\success\Documents\Sites"></a>
-			<a data-toggle="popover"  title="Adresse e-mail" data-placement="top"  data-content="contact@piano-morceaux.com"><img src="mail_2.png"  alt="email contact" href="C:\Users\success\Documents\Sites"></a>
-			<a data-toggle="popover"  title="Téléphone" data-content="01 66 36 90 50"><img src="telephone.png"  alt="telephone" href="C:\Users\success\Documents\Sites"></a>
+			<a data-toggle="popover" title="Chaine YouTube" data-placement="left" data-content="PianoMorceaux"><img src="images\logoyoutube.png"  alt="youtube compte" ></a>
+			<a data-toggle="popover"  title="Adresse e-mail" data-placement="top"  data-content="contact@piano-morceaux.com"><img src="images\mail_2.png"  alt="email contact" ></a>
+			<a data-toggle="popover"  title="Téléphone" data-content="01 66 36 90 50"><img src="images\telephone.png"  alt="telephone" ></a>
 		</p>
+
+
+
+
 		</p>
 	</div>
 	</div></div>	<!-- Fin de la section principale-->	
@@ -255,8 +295,8 @@ style="margin:0px auto;max-height:100%;"  />
 	</div><!-- .........................................................Fin de la première colonne............................................. -->
 
 
-<div class="col-md-2">  <!-- ...................................................Colonne 2................................................... -->
-		<div class="hidden-md"id="boxaside"> 
+
+		<div class="hidden-md hidden-sm hidden-xs"id="boxaside"> 
 			<nav>
 				<ul>
 					<li><a href="#nos-partenaires"class="scrollTo">NOS PARTENAIRES</a></li>
@@ -265,7 +305,7 @@ style="margin:0px auto;max-height:100%;"  />
 				</ul>
 			</nav>
 		</div><!-- Fin de la boxaside -->
-</div> <!-- .....................................................Fin de la colonne 2...................................................-->	
+
 
 
 
@@ -276,7 +316,7 @@ style="margin:0px auto;max-height:100%;"  />
 <div id="footer">
 	<footer>
 		<p><a href="#body" class="scrollTo" >Retour en haut de la page &uarr; </a>
-			<a id="logofooter"href="#body" class="scrollTo"> <img src="Logo_redimfooter.jpg" href="C:\Users\success\Documents\Sites"></a>
+			<a id="logofooter"href="#body" class="scrollTo"> <img src="images\Logo_redimfooter.jpg"></a>
 		</p>
 			
 	</footer>

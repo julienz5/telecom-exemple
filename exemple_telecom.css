@@ -85,8 +85,8 @@ top: 28%;
 
 #boxaside li:hover{
 	opacity: 1;
-	padding-left: 10px;
-	  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ffffff , 0 0 70px #ffffff , 0 0 80px #ffffff , 0 0 100px #ffffff ;
+	
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ffffff , 0 0 70px #ffffff , 0 0 80px #ffffff , 0 0 100px #ffffff ;
 }
 
 #boxaside a{
@@ -308,6 +308,7 @@ a:active, a:hover {
 color:white;
 opacity: 1;
 text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ffffff , 0 0 70px #ffffff , 0 0 80px #ffffff , 0 0 100px #ffffff ;
+
 }
 
 
@@ -316,6 +317,11 @@ text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 3
     display: block;
     padding: 10px 15px;
 }
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
 
 /* ..............Override boutton vidéo.........*/
 
