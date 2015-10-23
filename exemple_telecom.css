@@ -22,6 +22,16 @@ body {
 
 	padding: 0;
 }
+
+
+.col-md-1{
+
+padding: 0;
+
+}
+
+
+
 #dim-row{
 	width: 1349px;
 
@@ -32,18 +42,27 @@ body {
 	max-width: 620px;
 }
 
-#navbootstrap li a{
-	font-size: 18px;
-}
+
+
+
 
 #navbootstrap {
 	padding-left: 205px;
 }
 
+#navbootstrap li a{
+	font-size: 18px;
+}
+
+#navbootstrap a:visited{
+	color: white;
+}
+
 #sectionprincipale
 {
 	max-width: 1050px;
-	margin-left: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 
@@ -200,13 +219,23 @@ footer p{
 
 footer a{
 	color: white;
+
 }
 footer a:hover{
-	opacity:0.7;
+	opacity:1;
+	color: white;
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ffffff , 0 0 70px #ffffff , 0 0 80px #ffffff , 0 0 100px #ffffff ;
 }
+footer a:visited{
+	color: white;
+}
+
 footer img{
 	float:right;
-	padding-top: 13px;}
+	padding-top: 13px;
+	width:20%;
+}
+	
 
 /* STYLE DU CAROUSEL (non appliqué)
 
