@@ -350,3 +350,8 @@ background-color: black;
     background-color: rgba(64, 56, 56, 0.9);
     border-color: #ddd;
 }
+
+.row {
+    margin-right: 0px; 
+     margin-left: 0px; 
+}
