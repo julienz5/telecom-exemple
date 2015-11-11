@@ -1,3 +1,7 @@
+ 
+/* .......................General style...................... */
+
+
  p,h1,h2,ul,li
  {
  font-family: Palatino Linotype; 
@@ -18,6 +22,10 @@ body {
 	margin-right: 0px;
 }
 
+
+/* .......................Cadrillage Boostrap ...................... */
+
+
 .container-fluid{
 
 	padding: 0;
@@ -31,19 +39,35 @@ padding: 0;
 }
 
 
-
 #dim-row{
 	width: 1349px;
 
 }
+
+#sectionprincipale
+{
+	max-width: 1050px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+
+/* .......................Header ...................... */
+
 
 #imglogo{
 	width:100%;
 	max-width: 620px;
 }
 
-
-
+#slogan {
+	text-align: center;
+	font-size: 10px;
+	margin-top: -30px;
+	margin-bottom: 20px;
+	padding-left: 130px;
+}
 
 
 #navbootstrap {
@@ -58,17 +82,10 @@ padding: 0;
 	color: white;
 }
 
-#sectionprincipale
-{
-	max-width: 1050px;
-	margin-left: 0px;
-	margin-right: 0px;
-}
+
+/* .......................Box Aside ...................... */
 
 
-#accordion{
-	margin: 50px 0px;
-}
 
 #boxaside
 {
@@ -115,30 +132,11 @@ top: 28%;
 }
 
 
-#slogan {
-	text-align: center;
-	font-size: 10px;
-	margin-top: -30px;
-	margin-bottom: 20px;
-	padding-left: 130px;
-}
 
 
 
+/* .......................Formulaire ...................... */
 
-#imagespartenaires{
-
-}
-
-#pourquoi{
-	margin-top: 35px;
-}
-
-#my_carousel{
-	margin-top: 40px;
-	margin-bottom: 40px;
-
-}
 
 #formulaire {
 
@@ -161,6 +159,23 @@ width:250px;
 #formulaire p{
 	font-style: italic;
 }
+
+#formchamps{
+	color:white;
+}
+
+#nom {
+	margin-left: 30px;
+}
+
+#courriel{
+	margin-left: 5px;
+}
+
+
+/* .......................Mail ...................... */
+
+
 #mail {
 
 	display: block;
@@ -168,10 +183,8 @@ width:250px;
 	border:2px solid black;
 	border-radius: 5px;
 	width: 400px;
-	height: 80px;
-	
+	height: 80px;	
 }
-
 
 #mail img{
 height:51.2px; 
@@ -184,6 +197,8 @@ margin: 10px 15px;
 {
 	opacity: 0.7;
 }
+
+/* .......................Video ...................... */
 
 .video{
 	margin-top: 30px;
@@ -201,6 +216,8 @@ margin: 10px 15px;
 	border-color: #403838;
 }
 
+
+/* .......................Footer ...................... */
 
 
 footer{
@@ -236,6 +253,14 @@ footer img{
 	width:20%;
 }
 	
+@media (max-width:800px){
+	#logofooter{
+		width: 200px;
+	}
+}	
+
+
+/* .......................Carousel ...................... */
 
 /* STYLE DU CAROUSEL (non appliqué)
 
@@ -260,11 +285,15 @@ color:white;
 	width: 7%;
 }
 
+#my_carousel{
+	margin-top: 40px;
+	margin-bottom: 40px;
 
-
-
-Effet sur les titres 
 }
+
+
+
+/* .......................Effet sur les titres ...................... */
 .subtitle {
   margin: 1em 0 2em 0;
 }
@@ -295,11 +324,36 @@ Effet sur les titres
   margin-left: 15px;
 }
 
-/* ................................Override Bootstrap ...........................*/
+
+/* .......................Contenu vrac ...................... */
+
+#pourquoi{
+	margin-top: 35px;
+}
+
+#accordion{
+	margin: 50px 0px;
+}
+
+
+
+/* ................................Overwrite Bootstrap ...........................*/
+
 h1, .h1 {
     font-size: 24px;}
+
+    @media (max-width: 800px){
+    	h1, .h1 {
+    font-size: 18px;}
+    }
+
 h2, .h2 {
     font-size: 20px;}
+
+    @media (max-width: 800px){
+    	h2, .h2 {
+    font-size: 16px;}
+    }
 
 .container {
     padding-right: 0px; 
@@ -313,7 +367,7 @@ a:active, a:hover {
     outline-width: 0px;
 }
 
-/* ..............Override navbar.........*/
+/* ..............Overwrite navbar.........*/
 
 .navbar {
     position: relative;
@@ -352,7 +406,7 @@ a:-webkit-any-link {
 }
 
 
-/* ..............Override boutton vidéo.........*/
+/* ..............Overwrite boutton vidéo.........*/
 
 .btn-primary {
     color: #fff;
@@ -377,7 +431,7 @@ background-color: black;
  	margin: auto;
  }
 
-/* ..............Override Collapse.........*/
+/* ..............Overwrite Collapse.........*/
 
  .panel-default>.panel-heading {
     color: white;
