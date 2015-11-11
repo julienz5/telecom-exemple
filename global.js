@@ -18,6 +18,19 @@ $(document).ready(function(){
     $('[data-toggle="popover"]').popover(); 
 	});
 
+ //.........................................................................Dico Accords 
+
+	$(document).ready(function() {
+		$("#go").click(function(event) {
+			//console.log($( "#accord").val(),$( "#minmaj").val(),$( "#dim").val());
+			var src = $("#accord").val() + $("#minmaj").val() + ".jpg";
+			console.log(src);
+			//$("#output").attr('src', src.toLowerCase()).fadeIn(1500);
+			$("#output").fadeOut(500, function() {
+	        	$("#output").attr("src", "images/accords/" + src.toLowerCase());
+	    	}).fadeIn(1800);
+		});
+	});
 
 
 });

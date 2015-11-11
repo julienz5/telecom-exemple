@@ -26,6 +26,11 @@
   	
 
 <div class="container-fluid"> <!-- ....................................................Container........................................ -->
+<div class="row"> <!-- ................................................................Raw 1............................................ -->
+ <div class="col-md-1 visible-lg">  <!-- ............................................Colonne 1............................................. -->
+    </div><!-- ................................................................Fin de la Colonne 1............................................ --> 
+    <div class="col-md-10">  <!-- ............................................Colonne 2............................................. -->
+
 
   <header>
 
@@ -63,7 +68,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul id="navbootstrap" class="nav navbar-nav">
-        <li><a href="#pourquoi" class="scrollTo">Pourquoi devenir partenaire ?<span class="sr-only">(current)</span></a></li>
+        <li><a href="#pourquoi" class="scrollTo">Qui sommes-nous ?<span class="sr-only">(current)</span></a></li>
+        <li><a href="#dico" class="scrollTo">Le Dico</a></li>
         <li><a href="#partenaire" class="scrollTo">Devenir partenaire</a></li>
         <li><a href="#nos-partenaires" class="scrollTo">Nos partenaires</a></li>
 		<li><a href="#contact" class="scrollTo">Contact</a></li>
@@ -79,10 +85,6 @@
 
 
 
-<div class="row"> <!-- ................................................................Raw 1............................................ -->
-
-		<div class="col-md-10">  <!-- ............................................Colonne 1............................................. -->
-
 
 
 <div id="sectionprincipale"> <!-- Section principale-->
@@ -91,7 +93,7 @@
 	
 	<!-- Pourquoi -->
 	<div id="pourquoi">
-		<h2 class="subtitle fancy"><span>Pourquoi devenir partenaire ? </span></h2>
+		<h2 class="subtitle fancy"><span>Qui sommes-nous ? </span></h2>
 
 
 <!-- Collapse-->
@@ -100,7 +102,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          Qui sommes-nous ? 
+          Notre mission 
         </a>
       </h4>
     </div>
@@ -140,6 +142,62 @@
   </div>
 </div>
 </div> <!--Fin de la fiv Pourquoi-->
+
+    <!-- Devenir partenaire -->
+  <div id="dico">
+    <h2 class="subtitle fancy"> <span>Le Dictionnaire d'Accords</span> </h2>
+      <p>Choisissez l'accord que vous souhaitez visualiser, PianoMorceaux s'occupe du reste !  
+       </br></br>
+      </p>
+    
+ <!--.........................................................................Dico Accords -->
+         
+
+<div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+        <label for="sel1">Accord :</label>
+        <select class="form-control" id="accord">
+
+          <option value="C">C (Do)</option>
+          <option value="Cdiez">C#/Db (Do# ou Réb)</option>
+          <option value="D">D (Ré)</option>
+          <option value="Ddiez">D#/Eb (Ré# ou Mib)</option>
+          <option value="E">E (Mi)</option>
+          <option value="F">F (Fa)</option>
+          <option value="Fdiez">F#/Gb (Fa# ou Solb)</option>
+          <option value="G">G (Sol)</option>
+          <option value="Gdiez">G#/Ab (Sol# ou Lab)</option>
+          <option value="A">A (La)</option>
+          <option value="Adiez">A#/Bb (La# ou Sib)</option>
+          <option value="B">B (Si)</option>
+          
+        </select>
+      </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+        <label for="sel1">Mineur/majeur :</label>
+        <select class="form-control" id="minmaj">
+          <option>Maj</option>
+          <option>Min</option>
+        </select>
+      </div>
+        </div>
+    
+        <div class="col-md-2"> <button id="go" type="button" class="btn btn-primary">Go</button></div>
+</div><!--end row-->
+<div class="row">
+  <img id="output"class="center-block" src="images/accords/gifclavier/gifload.gif">
+</div>
+      
+
+  </div>
+
+
+
+
+
 
 
 
@@ -298,23 +356,34 @@ style="margin:0px auto;"  /></div>
 	</div>
 	</div>
 </div>	<!-- Fin de la section principale-->	
+
+
+<div id="footer"><!-- ..................................Footer..............................-->
+  <footer>
+    <p><a href="#body" class="scrollTo" >Retour en haut de la page &uarr; </a>
+      <a href="#body" class="scrollTo"> <img id="logofooter"src="images\Logo_redimfooter.jpg"></a>
+    </p>
+      
+  </footer>
+
 </div>
-	</div><!-- .........................................................Fin de la première colonne............................................. -->
 
 
 
+	</div><!-- .........................................................Fin de la  colonne 2............................................. -->
 
-<div class="col-md-1">
-		<div class="hidden-md hidden-sm hidden-xs"id="boxaside"> 
-			<nav>
-				<ul>
-					<li><a href="#nos-partenaires"class="scrollTo">NOS PARTENAIRES</a></li>
-					<li><a href="#pourquoi"class="scrollTo">QUI SOMMES-NOUS ?</a></li>
-					<li><a href="#body" class="scrollTo">RETOUR HAUT DE PAGE</a></li>
-				</ul>
-			</nav>
-		</div><!-- Fin de la boxaside -->
-</div>
+
+
+    <div class="col-md-1 visible-lg">  <!-- ............................................Colonne 3............................................. -->
+        <div id="boxaside">
+            <a target="_blank" href="https://www.youtube.com/channel/UCrHIy7Q9gMHuorotrxge62A"> <img class="img-responsive" id="imgyoutube"src="images\youtube.png"></a>
+            <ul>
+                <a target="_blank" href="https://www.youtube.com/channel/UCrHIy7Q9gMHuorotrxge62A"> <li>Chaîne YouTube<li> </a>
+                <a href="#body" class="scrollTo" > <li>Retour haut de page &uarr;<li> </a>
+            </ul>        
+        </div>
+    </div><!-- ................................................................Fin de la Colonne 3............................................ -->   
+
 
 
 </div> <!-- Fin de la dim row-->
@@ -323,15 +392,6 @@ style="margin:0px auto;"  /></div>
 
 
 
-<div id="footer"><!-- ..................................Footer..............................-->
-	<footer>
-		<p><a href="#body" class="scrollTo" >Retour en haut de la page &uarr; </a>
-			<a href="#body" class="scrollTo"> <img id="logofooter"src="images\Logo_redimfooter.jpg"></a>
-		</p>
-			
-	</footer>
-
-</div>
  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
